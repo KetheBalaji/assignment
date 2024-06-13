@@ -23,8 +23,8 @@ user_data = <<-EOF
              cd /home/ec2-user/microservice
              sudo docker build -t microservice .
              sudo docker run -d -p 80:80 microservice
-             aws configure set aws_access_key_id AKIAZI2LIQHI7AB6RLM7
-             aws configure set aws_secret_access_key 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
+             aws configure set aws_access_key_id ##########
+             aws configure set aws_secret_access_key #############
              aws configure set region us-east-1
              aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 637423616465.dkr.ecr.us-east-1.amazonaws.com
              docker tag microservice:latest 637423616465.dkr.ecr.us-east-1.amazonaws.com/my-microservice:latest
